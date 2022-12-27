@@ -1,4 +1,5 @@
 import Head from "next/head";
+import About from "../components/About";
 
 export default function Home() {
   return (
@@ -9,12 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <section className="min-h-screen">
-          <nav>
-            <h1>HOMIE43</h1>
-          </nav>
-        </section>
+      <main className="bg-white px-10">
+        <About />
       </main>
     </>
   );
