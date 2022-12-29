@@ -1,40 +1,73 @@
-import Nav from "./Nav";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import code from "../public/code.png";
+import design from "../public/design.png";
+import consulting from "../public/consulting.png";
 import Image from "next/image";
-import devImg from "../public/dev-ed-wave.png";
-// import avatar from "../public/avatar.png";
 
 const About = () => {
   return (
-    <section className="min-h-screen">
-      <Nav />
-      <div className="relative mx-auto bg-gradient-to-b from-teal-400 rounded-full w-80 h-80 nt-20 overflow-hidden">
-        <Image src={devImg} layout="fill" objectFit="cover" alt="Фото" />
-      </div>
-      <div className="pt-6 text-center space-y-4">
-        <h2 className="text-5xl py-2 text-teal-400">Владимир</h2>
-        <h3 className="text-2xl py-2">Forntend Developer</h3>
-        <p className="py-4 leading-7 text-gray-800">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-          nesciunt. Ipsam nisi, aliquid enim reiciendis dolor sequi vitae quidem
-          quam maiores fuga minus asperiores sint facere quis?
+    <section>
+      <div>
+        <h3 className="text-3xl py-1 ">Обо мне:</h3>
+        <p className="text-md py-2 leading-8 text-gray-800">
+          Привет! В разработку я пришел из банковской сферы.
         </p>
       </div>
-      <div className="flex justify-center py-3 text-3xl gap-5 text-gray-700">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/vladimir-kopylov-03734b258/"
-        >
-          <AiFillLinkedin />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/homie43"
-        >
-          <AiFillGithub />
-        </a>
+
+      <div className="lg:flex gap-10">
+        <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+          <Image
+            className="m-auto"
+            src={design}
+            width={100}
+            height={100}
+            alt="Design"
+          />
+          <h3 className="text-lg font-medium pt-8 pb-2  ">
+            Современные Frontend решения
+          </h3>
+          <p className="py-2">Делаю крутой UI исходя из ваших потребностей</p>
+          <h4 className="py-4 text-teal-600">Использую:</h4>
+          <ul className="no-underline">
+            <li className="text-gray-800 py-1">Photoshop</li>
+            <li className="text-gray-800 py-1">Illustrator</li>
+            <li className="text-gray-800 py-1">Figma</li>
+          </ul>
+        </div>
+
+        <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+          <Image
+            className="m-auto"
+            src={code}
+            width={100}
+            height={100}
+            alt="Code"
+          />
+          <h3 className="text-lg font-medium pt-8 pb-2">Чистый код</h3>
+          <p className="py-2">
+            Мой код максимлаьно прост и выразителен как проза 😂
+          </p>
+          <h4 className="py-4 text-teal-600">Принципы:</h4>
+          <ul className="no-underline">
+            <li className="text-gray-800 py-1">DRY</li>
+            <li className="text-gray-800 py-1">YAGNI</li>
+            <li className="text-gray-800 py-1">KISS</li>
+          </ul>
+        </div>
+
+        <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+          <Image
+            className="m-auto"
+            src={consulting}
+            width={100}
+            height={100}
+            alt="Consulting"
+          />
+          <h3 className="text-lg font-medium pt-8 pb-2  ">Простота во всем</h3>
+          <p className="py-2">
+            Если есть вопросы, то смело задвай, хоть один и тот же по 100 раз.
+            Буду рад с тобой его обсудить.
+          </p>
+        </div>
       </div>
     </section>
   );
