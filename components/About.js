@@ -7,8 +7,8 @@ const About = () => {
   return (
     <section>
       <div>
-        <h3 className="text-3xl py-1 ">Обо мне:</h3>
-        <p className="text-md py-2 leading-8 text-gray-800">
+        <h3 className="text-3xl py-1 dark:text-white">Обо мне:</h3>
+        <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
           Привет! В разработку я пришел из банковской сферы.
         </p>
       </div>
@@ -43,9 +43,7 @@ const About = () => {
             alt="Code"
           />
           <h3 className="text-lg font-medium pt-8 pb-2">Чистый код</h3>
-          <p className="py-2">
-            Мой код максимлаьно прост и выразителен как проза 😂
-          </p>
+          <p className="py-2">Мой код прост и выразителен как проза 😂</p>
           <h4 className="py-4 text-teal-600">Принципы:</h4>
           <ul className="no-underline">
             <li className="text-gray-800 py-1">DRY</li>
